@@ -1,11 +1,11 @@
 # Getting Started
 
-## Programming Essentials
+## 🧰 Programming Essentials
 ### Tools
-- [**Visual Studio Code**](https://code.visualstudio.com/)
-- [**Git**](https://git-scm.com/), *git version 2.40.0.windows.1*
+- [**Visual Studio Code**](https://code.visualstudio.com/), windows
+- [**Git**](https://git-scm.com/), *v2.40.0.windows.1*
 - [**Node.JS**](https://nodejs.org/en), *v22.13.0*
-- [**NPM**](https://www.npmjs.com/), *v10.9.0*
+- [**NPM**](https://www.npmjs.com/), *v11.0.0*
 
 ### VSCode Extensions
 - [**React Native Tools**](https://marketplace.visualstudio.com/items?itemName=msjsdiag.vscode-react-native)
@@ -15,7 +15,7 @@
 - [**React Native**](https://reactnative.dev/)
 - [**Expo.Dev**](https://expo.dev/)
 
-## Resources
+## 📚 Resources
 ### Tutorials
 - [Dave Gray, React native for Beginners Tutorial](https://www.youtube.com/watch?v=Hp9sTsiTZ_I&ab_channel=DaveGray)
 
