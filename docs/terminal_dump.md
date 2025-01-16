@@ -1,4 +1,6 @@
 # Terminal Dump
+Markdown file for weird terminal messages so it can be retraced.
+
 ## Creating the project
 After creating the project with the command: `npx create-expo-app@latest` I get a lot of warnings:
 

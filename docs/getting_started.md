@@ -1,4 +1,33 @@
 # Getting Started
+Follow these steps to set up the app and get started:
+
+## Steps
+### 1. Clone the Repository
+``` bash
+git clone git@github.com:Grittie/Beertracker-APP.git
+cd beertracker-app
+```
+
+### 2. Install Dependencies
+Make sure you have **Node.js** installed, then run:
+``` bash
+npm install
+```
+
+### 3. Setting up your Environment
+Follow the [setting up your environment guide](https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=physical) on Expo.Dev and select the device you want to develop on. This will guide you to the App you need to run the application on.
+
+### 4. Starting the development server
+To start the development server, run the following command:
+
+``` bash
+npx expo start
+```
+
+This should show you a QR code which you should scan with your Expo app on your phone.
+
+⚠️ Make sure that you are on the same Wi-Fi network on your computer and your device.
+
 
 ## 🧰 Programming Essentials
 ### Tools
