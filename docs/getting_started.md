@@ -44,6 +44,9 @@ This should show you a QR code which you should scan with your Expo app on your 
 - [**React Native**](https://reactnative.dev/)
 - [**Expo.Dev**](https://expo.dev/)
 
+### Dependencies
+- [**NativeWind, Tailwindcss**](https://www.nativewind.dev/getting-started/expo-router)
+
 ## 📚 Resources
 ### Tutorials
 - [Dave Gray, React native for Beginners Tutorial](https://www.youtube.com/watch?v=Hp9sTsiTZ_I&ab_channel=DaveGray)
