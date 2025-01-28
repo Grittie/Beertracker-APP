@@ -26,10 +26,12 @@ export default function HomeScreen() {
             style={styles.buttonImage}
           />
         </TouchableOpacity>
+      </View>
 
-        {/* Footer */}
-        <Text style={styles.bottomText}>Press to notify your friends</Text>
-        <Text style={styles.linkText}>Android  iOS</Text>
+      {/* Footer */}
+      <View style={styles.footer}>
+        <Text style={styles.bottomText}>Press to notify your friends!</Text>
+        <Text style={styles.linkText}>Beertracker.nl</Text>
       </View>
     </LinearGradient>
   );
@@ -38,23 +40,17 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    position: 'relative',
   },
   mainContent: {
+    flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   beerIcon: {
     marginTop: 100,
     width: 400,
     height: 256,
-  },
-  title: {
-    fontSize: 36,
-    fontWeight: 'bold',
-    color: '#000',
-    textAlign: 'center',
-    marginBottom: 40,
   },
   imageButton: {
     alignItems: 'center',
@@ -63,14 +59,25 @@ const styles = StyleSheet.create({
     width: 400,
     height: 110,
   },
+  footer: {
+    position: 'absolute',
+    bottom: 20,
+    width: '100%',
+    alignItems: 'center',
+  },
   bottomText: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
+    textShadowColor: '#fff',
+    textShadowRadius: 5,
     color: '#000',
   },
   linkText: {
-    fontSize: 14,
-    color: '#000',
-    marginTop: 20,
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: 'bold',
+    textShadowColor: '#000',
+    textShadowRadius: 5,
+    marginTop: 10,
   },
 });
