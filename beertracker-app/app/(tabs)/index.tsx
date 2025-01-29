@@ -1,35 +1,38 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { responsiveWidth, responsiveHeight, responsiveFontSize } from 'react-native-responsive-dimensions';
 import React from 'react';
 
 export default function HomeScreen() {
   return (
     <LinearGradient
-      colors={['#feeaae', '#e9c47b' ,'#da9d3c']}
+      colors={['#feeaae', '#e9c47b', '#da9d3c']}
       style={styles.container}
-      start={{x: 0, y: 0}}
-      end={{x: 0.8, y: 1}}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 0.8, y: 1 }}
       locations={[0.0, 0.5, 0.8]}
     >
-      {/* Main content */}
-      <View style={styles.mainContent}>
-        {/* Beer icon */}
-        <Image 
+      {/* HEADER */}
+      <View style={styles.header}>
+        {/* <Text style={styles.headerText}>Welcome to BeerTracker</Text> */}
+      </View>
+
+      {/* BODY */}
+      <View style={styles.body}>
+        <Image
           source={require('../../assets/images/home/biertje_doen_512x512.png')}
           style={styles.beerIcon}
         />
+      </View>
 
-        {/* Slider button */}
+      {/* FOOTER */}
+      <View style={styles.footer}>
         <TouchableOpacity style={styles.imageButton}>
-          <Image 
+          <Image
             source={require('../../assets/images/home/notify_button_512x256.png')}
             style={styles.buttonImage}
           />
         </TouchableOpacity>
-      </View>
-
-      {/* Footer */}
-      <View style={styles.footer}>
         <Text style={styles.bottomText}>Press to notify your friends!</Text>
         <Text style={styles.linkText}>Beertracker.nl</Text>
       </View>
@@ -40,33 +43,44 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    position: 'relative',
   },
-  mainContent: {
+  header: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerText: {
+    fontSize: responsiveFontSize(4),
+    fontWeight: 'bold',
+    color: '#000',
+    fontFamily: 'Rockabilly',
+  },
+  body: {
+    flex: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  beerIcon: {
+    width: responsiveWidth(98),
+    height: responsiveHeight(38),
+    marginBottom: 100,
+  },
+  footer: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  beerIcon: {
-    marginTop: 100,
-    width: 400,
-    height: 256,
-  },
   imageButton: {
     alignItems: 'center',
+    marginLeft: 22,
+    marginBottom: 20,
   },
   buttonImage: {
-    width: 400,
-    height: 110,
-  },
-  footer: {
-    position: 'absolute',
-    bottom: 20,
-    width: '100%',
-    alignItems: 'center',
+    width: responsiveWidth(95),
+    height: responsiveHeight(15),
   },
   bottomText: {
-    fontSize: 20,
+    fontSize: responsiveFontSize(4),
     fontWeight: 'bold',
     textShadowColor: '#fff',
     textShadowRadius: 5,
@@ -75,13 +89,12 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   linkText: {
-    fontSize: 18,
+    fontSize: responsiveFontSize(2.5),
     color: '#fff',
     fontWeight: 'bold',
     fontFamily: 'Rockabilly',
     letterSpacing: 2,
     textShadowColor: '#000',
     textShadowRadius: 5,
-    marginTop: 10,
   },
 });
