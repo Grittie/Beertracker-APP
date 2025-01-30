@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { StyleSheet, Button, Alert, View, Platform } from 'react-native';
+import { StyleSheet, Button, Alert, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function HomeScreen() {
@@ -19,7 +18,6 @@ export default function HomeScreen() {
         </View>
       </LinearGradient>
     </View>
-
   );
 }
 
