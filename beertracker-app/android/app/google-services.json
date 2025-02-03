@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93740076001",
+    "project_id": "beertracker-app",
+    "storage_bucket": "beertracker-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93740076001:android:54283d2cdc3b82468860a0",
+        "android_client_info": {
+          "package_name": "com.beertracker.bertrackerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1N3M-1D51uO318hXvQpJM1yiPSy6hiLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
